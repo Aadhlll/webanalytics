@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select ,[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Create an ad</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="Category">Category</label>
+    <select id="category" name="Category" placeholder="Category">
+      <option value="Fruits">Fruits</option>
+      <option value="Vegetables">Vegetables</option>
+      <option value="Pulses">Pulses</option>
+      <option value="Cereals">Cereals</option>
+      <option value="Seeds">Seeds</option>
+    </select>
+    
+    <label for="title">Product name</label>
+    <select id="productname" name="productname" placeholder="Product">
+      <option value="Tomato">Tomato</option>
+      <option value="Drumstick">Drumstick</option>
+      <option value="Raita">Raita</option>
+      <option value="Beans">Beans</option>
+      <option value="Kheera">Kheera</option>
+      <option value="Cabbage">Cabbage</option>
+      <option value="Spinach">Spinach</option>
+      <option value="Potato">Potato</option>
+      <option value="Cucumber">Cucumber</option>
+      <option value="Orange">Orange</option>
+      <option value="Mango">Mango</option>
+      <option value="Grapes">Grapes</option>
+      <option value="Lichi">Lichi</option>
+      <option value="Papaya">Papaya</option>
+      <option value="Guava">Guava</option>
+      <option value="Water melon">Water melon</option>
+      <option value="Sapota">Sapota</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Maize">Maize</option>
+      <option value="Sunflower seeds">Sunflower seeds</option>
+    </select>
+
+    <label for="quant">Quantity</label>
+    <input type="number" id="quant" name="Quantity" placeholder="Amount of stock present in Kg" min="1" max="10000" required>
+    
+
+  
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
